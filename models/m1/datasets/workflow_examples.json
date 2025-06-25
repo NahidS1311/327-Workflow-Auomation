@@ -1,0 +1,402 @@
+[
+  {
+    "instruction": "Take a photo of a receipt and save the total to Excel.",
+    "workflow": "capture_image -> run_m2(scan_receipt) -> add_to_excel"
+  },
+  {
+    "instruction": "If I shake the phone, turn on the flashlight.",
+    "workflow": "on_shake -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When I plug in headphones, open Spotify.",
+    "workflow": "on_headphones_connected -> open_app(app='Spotify')"
+  },
+  {
+    "instruction": "If ambient light is low, enable dark mode.",
+    "workflow": "read_light_sensor -> if(light<10) -> set_dark_mode(on)"
+  },
+  {
+    "instruction": "When I arrive at home, turn off mobile data.",
+    "workflow": "on_location(home) -> set_mobile_data(off)"
+  },
+  {
+    "instruction": "If I get an SMS with 'urgent', vibrate and read it aloud.",
+    "workflow": "on_sms(keyword='urgent') -> vibrate -> text_to_speech"
+  },
+  {
+    "instruction": "When the battery level drops below 15%, enable battery saver.",
+    "workflow": "read_battery_level -> if(battery<15) -> enable_battery_saver"
+  },
+  {
+    "instruction": "If I receive a WhatsApp message from Mom, play a custom sound.",
+    "workflow": "on_whatsapp_message(from='Mom') -> play_sound(custom)"
+  },
+  {
+    "instruction": "When a screenshot is taken, upload it to Google Drive.",
+    "workflow": "on_screenshot -> upload_to_drive(folder='Screenshots')"
+  },
+  {
+    "instruction": "When I press both volume buttons, call emergency contact.",
+    "workflow": "on_volume_buttons(pressed='both') -> call_contact('emergency')"
+  },
+  {
+    "instruction": "When the wifi is triggered, open app.",
+    "workflow": "read_wifi_signal -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the notification is triggered, vibrate.",
+    "workflow": "on_notification -> vibrate"
+  },
+  {
+    "instruction": "When the SMS is triggered, add to calendar.",
+    "workflow": "on_sms -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the location is triggered, upload to drive.",
+    "workflow": "on_location -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the microphone is triggered, vibrate.",
+    "workflow": "listen_microphone -> vibrate"
+  },
+  {
+    "instruction": "When the battery is triggered, add to calendar.",
+    "workflow": "read_battery_level -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the light sensor is triggered, open app.",
+    "workflow": "read_light_sensor -> open_app(app='Spotify')"
+  },
+  {
+    "instruction": "When the shake is triggered, vibrate.",
+    "workflow": "on_shake -> vibrate"
+  },
+  {
+    "instruction": "When the location is triggered, upload to drive.",
+    "workflow": "on_location -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the shake is triggered, vibrate.",
+    "workflow": "on_shake -> vibrate"
+  },
+  {
+    "instruction": "When the shake is triggered, vibrate.",
+    "workflow": "on_shake -> vibrate"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, upload to drive.",
+    "workflow": "read_gyroscope -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, toggle flashlight.",
+    "workflow": "read_accelerometer -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, upload to drive.",
+    "workflow": "read_accelerometer -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the battery is triggered, vibrate.",
+    "workflow": "read_battery_level -> vibrate"
+  },
+  {
+    "instruction": "When the light sensor is triggered, open app.",
+    "workflow": "read_light_sensor -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, vibrate.",
+    "workflow": "read_gyroscope -> vibrate"
+  },
+  {
+    "instruction": "When the SMS is triggered, add to calendar.",
+    "workflow": "on_sms -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the battery is triggered, toggle flashlight.",
+    "workflow": "read_battery_level -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the light sensor is triggered, toggle flashlight.",
+    "workflow": "read_light_sensor -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the headphones is triggered, toggle flashlight.",
+    "workflow": "on_headphones_connected -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the SMS is triggered, record audio.",
+    "workflow": "on_sms -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the wifi is triggered, toggle flashlight.",
+    "workflow": "read_wifi_signal -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, vibrate.",
+    "workflow": "read_gyroscope -> vibrate"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, vibrate.",
+    "workflow": "on_volume_buttons -> vibrate"
+  },
+  {
+    "instruction": "When the shake is triggered, record audio.",
+    "workflow": "on_shake -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the screenshot is triggered, vibrate.",
+    "workflow": "on_screenshot -> vibrate"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, open app.",
+    "workflow": "on_bluetooth_device_near -> open_app(app='Drive')"
+  },
+  {
+    "instruction": "When the light sensor is triggered, vibrate.",
+    "workflow": "read_light_sensor -> vibrate"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, text to speech.",
+    "workflow": "read_accelerometer -> text_to_speech"
+  },
+  {
+    "instruction": "When the microphone is triggered, add to calendar.",
+    "workflow": "listen_microphone -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, vibrate.",
+    "workflow": "on_bluetooth_device_near -> vibrate"
+  },
+  {
+    "instruction": "When the light sensor is triggered, text to speech.",
+    "workflow": "read_light_sensor -> text_to_speech"
+  },
+  {
+    "instruction": "When the proximity sensor is triggered, upload to drive.",
+    "workflow": "read_proximity_sensor -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, toggle flashlight.",
+    "workflow": "read_accelerometer -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the proximity sensor is triggered, add to calendar.",
+    "workflow": "read_proximity_sensor -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the battery is triggered, add to calendar.",
+    "workflow": "read_battery_level -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, open app.",
+    "workflow": "on_bluetooth_device_near -> open_app(app='Drive')"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, open app.",
+    "workflow": "on_volume_buttons -> open_app(app='Maps')"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, add to calendar.",
+    "workflow": "on_volume_buttons -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the SMS is triggered, vibrate.",
+    "workflow": "on_sms -> vibrate"
+  },
+  {
+    "instruction": "When the SMS is triggered, text to speech.",
+    "workflow": "on_sms -> text_to_speech"
+  },
+  {
+    "instruction": "When the notification is triggered, vibrate.",
+    "workflow": "on_notification -> vibrate"
+  },
+  {
+    "instruction": "When the SMS is triggered, record audio.",
+    "workflow": "on_sms -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the screenshot is triggered, vibrate.",
+    "workflow": "on_screenshot -> vibrate"
+  },
+  {
+    "instruction": "When the screenshot is triggered, text to speech.",
+    "workflow": "on_screenshot -> text_to_speech"
+  },
+  {
+    "instruction": "When the microphone is triggered, record audio.",
+    "workflow": "listen_microphone -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the notification is triggered, toggle flashlight.",
+    "workflow": "on_notification -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the microphone is triggered, open app.",
+    "workflow": "listen_microphone -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the headphones is triggered, text to speech.",
+    "workflow": "on_headphones_connected -> text_to_speech"
+  },
+  {
+    "instruction": "When the location is triggered, text to speech.",
+    "workflow": "on_location -> text_to_speech"
+  },
+  {
+    "instruction": "When the screenshot is triggered, text to speech.",
+    "workflow": "on_screenshot -> text_to_speech"
+  },
+  {
+    "instruction": "When the headphones is triggered, open app.",
+    "workflow": "on_headphones_connected -> open_app(app='Drive')"
+  },
+  {
+    "instruction": "When the headphones is triggered, text to speech.",
+    "workflow": "on_headphones_connected -> text_to_speech"
+  },
+  {
+    "instruction": "When the shake is triggered, vibrate.",
+    "workflow": "on_shake -> vibrate"
+  },
+  {
+    "instruction": "When the notification is triggered, toggle flashlight.",
+    "workflow": "on_notification -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, record audio.",
+    "workflow": "on_volume_buttons -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, open app.",
+    "workflow": "on_bluetooth_device_near -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, vibrate.",
+    "workflow": "on_bluetooth_device_near -> vibrate"
+  },
+  {
+    "instruction": "When the notification is triggered, text to speech.",
+    "workflow": "on_notification -> text_to_speech"
+  },
+  {
+    "instruction": "When the camera is triggered, vibrate.",
+    "workflow": "capture_image -> vibrate"
+  },
+  {
+    "instruction": "When the location is triggered, add to calendar.",
+    "workflow": "on_location -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the shake is triggered, open app.",
+    "workflow": "on_shake -> open_app(app='Camera')"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, text to speech.",
+    "workflow": "read_gyroscope -> text_to_speech"
+  },
+  {
+    "instruction": "When the microphone is triggered, record audio.",
+    "workflow": "listen_microphone -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the light sensor is triggered, open app.",
+    "workflow": "read_light_sensor -> open_app(app='Drive')"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, open app.",
+    "workflow": "read_accelerometer -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the light sensor is triggered, vibrate.",
+    "workflow": "read_light_sensor -> vibrate"
+  },
+  {
+    "instruction": "When the shake is triggered, vibrate.",
+    "workflow": "on_shake -> vibrate"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, record audio.",
+    "workflow": "on_bluetooth_device_near -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the microphone is triggered, toggle flashlight.",
+    "workflow": "listen_microphone -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, toggle flashlight.",
+    "workflow": "on_volume_buttons -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, open app.",
+    "workflow": "on_volume_buttons -> open_app(app='Drive')"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, upload to drive.",
+    "workflow": "on_volume_buttons -> capture_image -> upload_to_drive(folder='AutoUploads')"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, vibrate.",
+    "workflow": "read_gyroscope -> vibrate"
+  },
+  {
+    "instruction": "When the screenshot is triggered, record audio.",
+    "workflow": "on_screenshot -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the wifi is triggered, vibrate.",
+    "workflow": "read_wifi_signal -> vibrate"
+  },
+  {
+    "instruction": "When the microphone is triggered, text to speech.",
+    "workflow": "listen_microphone -> text_to_speech"
+  },
+  {
+    "instruction": "When the proximity sensor is triggered, record audio.",
+    "workflow": "read_proximity_sensor -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the volume_buttons is triggered, add to calendar.",
+    "workflow": "on_volume_buttons -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the light sensor is triggered, add to calendar.",
+    "workflow": "read_light_sensor -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the bluetooth is triggered, open app.",
+    "workflow": "on_bluetooth_device_near -> open_app(app='Camera')"
+  },
+  {
+    "instruction": "When the microphone is triggered, open app.",
+    "workflow": "listen_microphone -> open_app(app='Spotify')"
+  },
+  {
+    "instruction": "When the SMS is triggered, vibrate.",
+    "workflow": "on_sms -> vibrate"
+  },
+  {
+    "instruction": "When the shake is triggered, add to calendar.",
+    "workflow": "on_shake -> add_to_calendar(event='Reminder')"
+  },
+  {
+    "instruction": "When the gyroscope is triggered, open app.",
+    "workflow": "read_gyroscope -> open_app(app='Maps')"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, toggle flashlight.",
+    "workflow": "read_accelerometer -> toggle_flashlight(on)"
+  },
+  {
+    "instruction": "When the screenshot is triggered, open app.",
+    "workflow": "on_screenshot -> open_app(app='YouTube')"
+  },
+  {
+    "instruction": "When the accelerometer is triggered, record audio.",
+    "workflow": "read_accelerometer -> record_audio(duration=30s)"
+  },
+  {
+    "instruction": "When the notification is triggered, open app.",
+    "workflow": "on_notification -> open_app(app='Chrome')"
+  }
+]
